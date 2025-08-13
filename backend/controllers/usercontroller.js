@@ -1,2 +1,4 @@
-const { getUsers } = require('../controllers/userController');
-router.get('/', getUsers);
+exports.getUsers = (req, res) => {
+  res.json({ message: "User list fetched successfully!" });
+};
+
