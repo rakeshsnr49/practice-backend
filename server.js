@@ -17,7 +17,10 @@ mongoose.connect(mongoURI, {
 .catch(err => console.log('MongoDB connection error:', err));
 
 // Routes
-app.use('/users', userRoutes);
+const rootRouter = require('./routes/roots');
+
+//API endpoint prefix
+app.use('/roots',rootsRouter); 
 
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => {
