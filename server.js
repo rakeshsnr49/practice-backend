@@ -7,6 +7,8 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
+const packagedata = require('./package.json');
+
 // MongoDB connection
 const mongoURI = process.env.MONGO_URI || 'YOUR_MONGODB_URI';
 mongoose.connect(mongoURI, {
