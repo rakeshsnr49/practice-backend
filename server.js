@@ -16,10 +16,11 @@ app.use('/api/users', userRoutes);
 app.use('/', routes);
 
 // MongoDB connection (optional)
-mongoose.connect('mongodb://localhost:27017/mydb', {
+mongoose.connect('mongodb+srv://nidbiz108:Rsonar@1@1R1.suoshh4.mongodb.net/practice-backend?retryWrites=true&w=majority&appName=R1", {
   useNewUrlParser: true,
   useUnifiedTopology: true
-}).then(() => console.log('MongoDB connected'))
+})
+  .then(() => console.error('MongoDB connection error:", err));
   .catch(err => console.log(err));
 
 // Start server
