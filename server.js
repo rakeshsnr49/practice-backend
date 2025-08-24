@@ -16,7 +16,7 @@ app.use('/api/users', userRoutes);
 app.use('/', routes);
 
 // MongoDB connection (optional)
-mongoose.connect('mongodb+srv://nidbiz108:Rsonar@1@1R1.suoshh4.mongodb.net/practice-backend?retryWrites=true&w=majority&appName=R1", {
+mongoose.connect('mongodb+srv://nidbiz108:Rsonar%401@1R1.suoshh4.mongodb.net/practice-backend?retryWrites=true&w=majority&appName=R1", {
   useNewUrlParser: true,
   useUnifiedTopology: true
 })
